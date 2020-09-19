@@ -6,6 +6,10 @@ import android.view.MenuItem
 import android.widget.Toast
 import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.drawerlayout.widget.DrawerLayout
+import com.example.ieee.Fragments.AboutFragment
+import com.example.ieee.Fragments.EventFragment
+import com.example.ieee.Fragments.HomeFragment
+import com.example.ieee.Fragments.SIgninFragment
 import com.google.android.material.navigation.NavigationView
 
 
@@ -28,14 +32,34 @@ class Navigationdrawer : AppCompatActivity() {
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
                 navView.setNavigationItemSelectedListener{
                     when(it.itemId){
-                        R.id.miItem1 -> Toast.makeText(applicationContext,
-                                "Clicked Item 1", Toast.LENGTH_SHORT).show()
-                        R.id.miItem2 -> Toast.makeText(applicationContext,
-                                "Clicked Item 2", Toast.LENGTH_SHORT).show()
-                        R.id.miItem3 -> Toast.makeText(applicationContext,
-                                "Clicked Item 3", Toast.LENGTH_SHORT).show()
-                        R.id.miItem4 -> Toast.makeText(applicationContext,
-                                "Clicked Item 4", Toast.LENGTH_SHORT).show()
+                        R.id.miItem1 -> {
+                            Toast.makeText(applicationContext, "Clicked Item 1", Toast.LENGTH_SHORT).show()
+                                val transaction = supportFragmentManager.beginTransaction()
+                                    transaction.replace(R.id.mainframe, HomeFragment())
+                                    transaction.disallowAddToBackStack()
+                                    transaction.commit()
+                        }
+                        R.id.miItem2 ->  {
+                            Toast.makeText(applicationContext, "Clicked Item 2", Toast.LENGTH_SHORT).show()
+                            val transaction = supportFragmentManager.beginTransaction()
+                            transaction.replace(R.id.mainframe, EventFragment())
+                            transaction.disallowAddToBackStack()
+                            transaction.commit()
+                        }
+                        R.id.miItem3 -> {
+                            Toast.makeText(applicationContext, "Clicked Item 3", Toast.LENGTH_SHORT).show()
+                            val transaction = supportFragmentManager.beginTransaction()
+                            transaction.replace(R.id.mainframe, AboutFragment())
+                            transaction.disallowAddToBackStack()
+                            transaction.commit()
+                        }
+                        R.id.miItem4 -> {
+                            Toast.makeText(applicationContext, "Clicked Item 4", Toast.LENGTH_SHORT).show()
+                            val transaction = supportFragmentManager.beginTransaction()
+                            transaction.replace(R.id.mainframe, SIgninFragment())
+                            transaction.disallowAddToBackStack()
+                            transaction.commit()
+                        }
                     }
 true
                 }
