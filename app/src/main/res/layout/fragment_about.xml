@@ -5,10 +5,120 @@
     android:layout_height="match_parent"
     tools:context=".Fragments.AboutFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+   <ScrollView
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:orientation="vertical">
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="vertical">
+
+               <ImageView
+                   android:layout_width="250dp"
+                   android:layout_height="250dp"
+                   android:layout_marginTop="50dp"
+
+                   android:src="@drawable/ab1"
+                   android:layout_gravity="center_horizontal"/>
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_gravity="center_horizontal"
+                   android:text="About ABV IIITM"
+                   android:textStyle="bold"
+                   android:textSize="40sp"
+                   android:textColor="#D5D5D5"/>
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_margin="20dp"
+                   android:layout_gravity="center_horizontal"
+                   android:text="ABV IIITM Gwalior is an Institute of National Importance established by MHRD, Government of India, commited for the betterment of it's students in the field of academic as well as extracurricular activities. It is located on Morena Link Road, Gwalior, Madhya Pradesh and has a campus spread over 160 acres (0.65 km2). Students are at moderate distance from the city and have a green and peaceful environment for their study."
+                   android:textStyle="bold"
+                   android:textSize="20sp"
+                   android:textColor="#919191"/>
+
+
+           </LinearLayout>
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="vertical">
+
+               <ImageView
+                   android:layout_width="250dp"
+                   android:layout_height="250dp"
+                   android:layout_marginTop="50dp"
+                   android:src="@drawable/abb2"
+                   android:layout_gravity="center_horizontal"/>
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_gravity="center_horizontal"
+                   android:layout_margin="20dp"
+                   android:text="IEEE Bombay Section"
+                   android:textStyle="bold"
+                   android:textSize="40sp"
+                   android:textColor="#D5D5D5"/>
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_margin="20dp"
+                   android:layout_gravity="center_horizontal"
+                   android:text="ABV IIITM established it's IEEE Student Branch, which falls under IEEE Bombay Section, on April 12, 2019. The Bombay Section was formed with a Territory of Maharashtra, Goa, Gujarat and Madhya Pradesh. The association with IEEE Bombay Section would enable students to utilize the benefits of IEEE membership, including scholarships, competitions, and conference grants."
+                   android:textStyle="bold"
+                   android:textSize="20sp"
+                   android:textColor="#919191"/>
+
+
+           </LinearLayout>
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="vertical">
+
+               <ImageView
+                   android:layout_width="250dp"
+                   android:layout_height="250dp"
+                   android:layout_marginTop="50dp"
+                   android:src="@drawable/abb3"
+                   android:layout_gravity="center_horizontal"/>
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_gravity="center_horizontal"
+                   android:text="About IEEE"
+                   android:textStyle="bold"
+                   android:textSize="40sp"
+                   android:textColor="#D5D5D5"/>
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_margin="20dp"
+                   android:layout_marginBottom="50dp"
+                   android:layout_gravity="center_horizontal"
+                   android:text="IEEE is the world’s largest technical professional organization dedicated to advancing technology for the benefit of humanity. IEEE and its members inspire a global community through its highly cited publications, conferences, technology standards, and professional and educational activities."
+                   android:textStyle="bold"
+                   android:textSize="20sp"
+                   android:textColor="#919191"/>
+
+
+           </LinearLayout>
+
+       </LinearLayout>
+
+   </ScrollView>
 
 </FrameLayout>
