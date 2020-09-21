@@ -51,7 +51,7 @@
         </LinearLayout>
 
         <Button
-            android:layout_width="150dp"
+            android:layout_width="140dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
             android:layout_gravity="center_horizontal"
@@ -62,7 +62,7 @@
             app:iconPadding="8dp" />
 
         <Button
-            android:layout_width="150dp"
+            android:layout_width="140dp"
             android:layout_margin="8dp"
             android:layout_height="wrap_content"
            android:layout_gravity="center_horizontal"
@@ -83,10 +83,10 @@
             android:gravity="center"
             android:padding="10sp"/>
         <LinearLayout
-            android:layout_width="400dp"
-            android:layout_height="250dp"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
             android:padding="5dp"
-            android:layout_marginLeft="5dp"
+            android:layout_margin="7dp"
             android:background="@drawable/past_events"
             android:orientation="vertical">
 
@@ -94,6 +94,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Battle Zone"
+                android:background="#C3000000"
              android:textSize="30sp"
                 android:textStyle="bold"
                 android:textColor="@color/white"/>
@@ -102,6 +103,8 @@
                 android:layout_height="wrap_content"
                 android:text="@string/battlezone_content"
                 android:textColor="@color/white"
+                android:background="#C9000000"
+                android:layout_margin="10dp"
                 android:textSize="15sp"
                 android:textStyle="bold"/>
             <Button

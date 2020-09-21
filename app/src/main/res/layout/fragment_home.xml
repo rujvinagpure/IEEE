@@ -69,16 +69,16 @@
             app:backgroundTint="#03A9F4"
             app:iconPadding="8dp" />
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="5dp"
-            android:layout_marginTop="5dp"
-            android:text="@string/text_two"
-            android:textColor="@color/black"
-            android:textSize="30sp"
-            android:textStyle="bold"
-            android:layout_marginStart="5dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:text="@string/text_two"
+                android:textColor="@color/black"
+                android:textSize="30sp"
+                android:textStyle="bold" />
 
         <TextView
             android:layout_width="match_parent"
@@ -186,118 +186,251 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
                 android:text="@string/announcements"
                 android:gravity="center_horizontal"
                 android:textColor="@color/deep_pink"
                 android:textStyle="bold"
                 android:textSize="35sp"
                 />
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/Announcement_content"
                 android:gravity="center_horizontal"
+                android:padding="20dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/announcement"
+                android:text="@string/Announcement_content"
                 android:textColor="@color/black"
-                android:textStyle="normal"
                 android:textSize="12sp"
-                />
+                android:textStyle="bold" />
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/our_mentors"
-                android:layout_marginTop="5dp"
+                android:layout_marginTop="20dp"
                 android:gravity="center_horizontal"
                 android:textColor="@color/deep_pink"
                 android:textStyle="bold"
                 android:textSize="30sp"
                 />
+
             <LinearLayout
-                android:layout_width="250dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="@drawable/card_bg"
+                android:layout_marginTop="50dp"
                 android:layout_gravity="center_horizontal"
-                android:orientation="vertical"/>
-            <androidx.cardview.widget.CardView
-                android:layout_width="250dp"
-                android:layout_height="150dp"
-                app:cardElevation="10dp"
-                app:cardMaxElevation="6dp"
-                app:cardBackgroundColor="#FFF"
-                android:layout_gravity="center_horizontal"
-                >
+                android:orientation="vertical">
 
-                <de.hdodenhof.circleimageview.CircleImageView
-                    android:layout_width="100dp"
-                    android:layout_height="100dp"
-                    android:layout_gravity="center_horizontal"
-                    android:src="@drawable/rsahu"
-                    app:civ_border_color="@color/white"
-                    app:civ_border_width="2dp" />
+                <androidx.cardview.widget.CardView
+                    android:layout_width="250dp"
+                    android:layout_height="250dp"
+                    android:layout_marginBottom="15dp"
+                    android:elevation="20dp">
 
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="100dp"
-                    android:gravity="center_horizontal"
-                    android:text="@string/prof_rajendra_sahu"
-                    android:textColor="@color/black"
-                    android:textSize="20sp"
-                    android:textStyle="bold" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:background="@drawable/card_bg">
+
+                            <de.hdodenhof.circleimageview.CircleImageView
+                                android:layout_width="90dp"
+                                android:layout_height="90dp"
+                                android:layout_centerVertical="true"
+                                android:layout_centerHorizontal="true"
+                                android:src="@drawable/rsahu"
+                                app:civ_border_color="@color/white"
+                                app:civ_border_width="2dp" />
 
 
-            <TextView
+                        </RelativeLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="5dp"
+                            android:text="Prof. Rajendra Sahu"
+                            android:textColor="#000"
+                            android:textSize="20sp"
+                            android:textStyle="bold"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="Director"
+                            android:textSize="15sp"
+                            android:textColor="#989898"
+                            android:layout_marginTop="20dp"/>
+
+                            <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="ABV-IIITM GWALIOR"
+                            android:textSize="15sp"
+                            android:textColor="#989898"
+                            android:layout_marginTop="5dp"/>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="20dp">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="10dp"
+                                android:src="@drawable/ic_baseline_local_phone_24"/>
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:src="@drawable/mail"/>
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="250dp"
+                    android:layout_height="250dp"
+                    android:layout_marginTop="15dp"
+                    android:elevation="20dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:background="@drawable/card_bg">
+
+                            <de.hdodenhof.circleimageview.CircleImageView
+                                android:layout_width="90dp"
+                                android:layout_height="90dp"
+                                android:layout_centerVertical="true"
+                                android:layout_centerHorizontal="true"
+                                android:src="@drawable/someshk"
+                                app:civ_border_color="@color/white"
+                                app:civ_border_width="2dp" />
+
+
+                        </RelativeLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="5dp"
+                            android:text="Dr. Somesh Kumar"
+                            android:textColor="#000"
+                            android:textSize="20sp"
+                            android:textStyle="bold"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="Faculty Co-ordinator"
+                            android:textSize="15sp"
+                            android:textColor="#989898"
+                            android:layout_marginTop="20dp"/>
+
+                            <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="ABV-IIITM GWALIOR"
+                            android:textSize="15sp"
+                            android:textColor="#989898"
+                            android:layout_marginTop="5dp"/>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="20dp">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="10dp"
+                                android:src="@drawable/ic_baseline_local_phone_24"/>
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:src="@drawable/mail"/>
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/director_abv_iiitm_gwalior"
-                android:textColor="@color/dark_grey"
-                android:textStyle="normal"
-                android:layout_marginTop="130dp"
-                android:gravity="center_horizontal" />
-            </androidx.cardview.widget.CardView>
-            <LinearLayout
-                android:layout_width="250dp"
-                android:layout_height="wrap_content"
-                android:background="@drawable/card_bg"
-                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="30dp"
                 android:orientation="vertical"
-                android:layout_marginTop="20dp" />
-            <androidx.cardview.widget.CardView
-                android:layout_width="250dp"
-                android:layout_height="150dp"
-                app:cardElevation="10dp"
-                app:cardMaxElevation="6dp"
-                app:cardBackgroundColor="#FFF"
-                android:layout_gravity="center_horizontal"
-                >
-                <de.hdodenhof.circleimageview.CircleImageView
-                    android:layout_width="100dp"
-                    android:layout_height="100dp"
+                android:background="#FFAB00">
+
+                <ImageView
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:layout_marginTop="30dp"
                     android:layout_gravity="center_horizontal"
-                    android:src="@drawable/someshk"
-                    app:civ_border_color="@color/white"
-                    app:civ_border_width="2dp" />
+                    android:src="@drawable/blogpic"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="We help bloggers grow."
+                    android:textColor="#000"
+                    android:textSize="30sp"
+                    android:textStyle="bold"/>
 
                 <TextView
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="100dp"
-                    android:gravity="center_horizontal"
-                    android:text="@string/dr_somesh_kumar"
-                    android:textColor="@color/black"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_margin="10dp"
+                    android:text="You have something to say. Our goal is to help you share your voice with as many people as possible."
                     android:textSize="20sp"
-                    android:textStyle="bold" />
-                <TextView
-                    android:layout_width="match_parent"
+                    android:textColor="#000"/>
+
+                <Button
+                    android:layout_width="170dp"
                     android:layout_height="wrap_content"
-                    android:text="@string/faculty_coordinator_abv_iiitm_gwalior"
-                    android:textColor="@color/dark_grey"
-                    android:textStyle="normal"
-                    android:layout_marginTop="130dp"
-                    android:gravity="center_horizontal" />
+                    android:textColor="#fff"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="7dp"
+                    android:layout_marginBottom="50dp"
+                    android:background="@drawable/rounderbtn"
+                    android:text="Coming Soon"/>
 
-
-
-            </androidx.cardview.widget.CardView>
+            </LinearLayout>
 
         </LinearLayout>
 
