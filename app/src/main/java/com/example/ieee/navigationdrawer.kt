@@ -26,6 +26,11 @@ class Navigationdrawer : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_navigationdrawer)
 
+        val transaction = supportFragmentManager.beginTransaction()
+        transaction.replace(R.id.mainframe, HomeFragment())
+        transaction.disallowAddToBackStack()
+        transaction.commit()
+
         drawerLayout = findViewById(R.id.drawerLayout)
         navView = findViewById(R.id.navView)
 
