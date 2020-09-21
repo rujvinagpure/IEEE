@@ -26,5 +26,9 @@
     <string name="announcements">Announcements</string>
     <string name="Announcement_content">Hacksagon 2020 Results are out!!</string>
     <string name="our_mentors">Our Mentors</string>
+    <string name="director_abv_iiitm_gwalior">Director ABV IIItm Gwalior</string>
+    <string name="prof_rajendra_sahu">Prof. Rajendra Sahu</string>
+    <string name="dr_somesh_kumar">Dr. Somesh Kumar</string>
+    <string name="faculty_coordinator_abv_iiitm_gwalior">Faculty Coordinator, ABV IIITM Gwalior</string>
 
 </resources>
