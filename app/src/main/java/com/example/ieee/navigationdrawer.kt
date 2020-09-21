@@ -2,9 +2,12 @@ package com.example.ieee
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.Gravity
 import android.view.MenuItem
+import android.view.View
 import android.widget.Toast
 import androidx.appcompat.app.ActionBarDrawerToggle
+import androidx.core.view.GravityCompat
 import androidx.drawerlayout.widget.DrawerLayout
 import com.example.ieee.Fragments.AboutFragment
 import com.example.ieee.Fragments.EventFragment
@@ -33,36 +36,38 @@ class Navigationdrawer : AppCompatActivity() {
                 navView.setNavigationItemSelectedListener{
                     when(it.itemId){
                         R.id.miItem1 -> {
-                            Toast.makeText(applicationContext, "Clicked Item 1", Toast.LENGTH_SHORT).show()
                                 val transaction = supportFragmentManager.beginTransaction()
                                     transaction.replace(R.id.mainframe, HomeFragment())
                                     transaction.disallowAddToBackStack()
                                     transaction.commit()
+                            drawerLayout.closeDrawer(GravityCompat.START,false)
+
                         }
                         R.id.miItem2 ->  {
-                            Toast.makeText(applicationContext, "Clicked Item 2", Toast.LENGTH_SHORT).show()
                             val transaction = supportFragmentManager.beginTransaction()
                             transaction.replace(R.id.mainframe, EventFragment())
                             transaction.disallowAddToBackStack()
                             transaction.commit()
+                            drawerLayout.closeDrawer(GravityCompat.START,false)
                         }
                         R.id.miItem3 -> {
-                            Toast.makeText(applicationContext, "Clicked Item 3", Toast.LENGTH_SHORT).show()
                             val transaction = supportFragmentManager.beginTransaction()
                             transaction.replace(R.id.mainframe, AboutFragment())
                             transaction.disallowAddToBackStack()
                             transaction.commit()
+                            drawerLayout.closeDrawer(GravityCompat.START,false)
                         }
                         R.id.miItem4 -> {
-                            Toast.makeText(applicationContext, "Clicked Item 4", Toast.LENGTH_SHORT).show()
                             val transaction = supportFragmentManager.beginTransaction()
                             transaction.replace(R.id.mainframe, SIgninFragment())
                             transaction.disallowAddToBackStack()
                             transaction.commit()
+                            drawerLayout.closeDrawer(GravityCompat.START,false)
                         }
                     }
 true
                 }
+
     }
     override fun onOptionsItemSelected (item : MenuItem): Boolean{
 if(toggle.onOptionsItemSelected(item)){
