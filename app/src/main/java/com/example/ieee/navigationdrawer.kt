@@ -26,11 +26,6 @@ class Navigationdrawer : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_navigationdrawer)
 
-        val transaction = supportFragmentManager.beginTransaction()
-        transaction.replace(R.id.mainframe, HomeFragment())
-        transaction.disallowAddToBackStack()
-        transaction.commit()
-
         drawerLayout = findViewById(R.id.drawerLayout)
         navView = findViewById(R.id.navView)
 
@@ -63,24 +58,21 @@ class Navigationdrawer : AppCompatActivity() {
                             drawerLayout.closeDrawer(GravityCompat.START,false)
                         }
                         R.id.miItem4 -> {
-
                             val transaction = supportFragmentManager.beginTransaction()
                             transaction.replace(R.id.mainframe, SIgninFragment())
                             transaction.disallowAddToBackStack()
                             transaction.commit()
                             drawerLayout.closeDrawer(GravityCompat.START,false)
                         }
-
                     }
-                true
-
+true
                 }
 
     }
-            override fun onOptionsItemSelected (item : MenuItem): Boolean{
-        if(toggle.onOptionsItemSelected(item)){
-                    return true
-                }
-        return super.onOptionsItemSelected(item)
-            }
+    override fun onOptionsItemSelected (item : MenuItem): Boolean{
+if(toggle.onOptionsItemSelected(item)){
+            return true
+        }
+return super.onOptionsItemSelected(item)
+    }
 }
