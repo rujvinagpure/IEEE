@@ -4,4 +4,27 @@
     <string name="close">Close</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="ieee_student_branch">IEEE Student Branch</string>
+    <string name="text_one">
+    The world largest technical professional organization for the advancement of technology
+    </string>
+    <string name="text_two">
+    Why are we here
+    </string>
+    <string name="learn_more">Learn More</string>
+    <string name="student_branch">Student Branch</string>
+    <string name="ieee">IEEE</string>
+    <string name="about_us">About Us</string>
+    <string name="point_one">IEEE Student Branch falls under IEEE Bombay Section, a technical network of doctoral, masters, and undergraduate students of ABV-IIITM Gwalior, was established on April 12,2019.</string>
+    <string name="_01">01</string>
+    <string name="_02">02</string>
+    <string name="point_two">This association enables students to utilize the benefits of IEEE membership, including scholarships, competitions, and conference grants.</string>
+  <string name="point_three">Aims to organize social and technical activities that promotes sharing of knowledge in science, technology, and engineering.</string>
+<string name="point_four">IEEE Student Branch becomes an intermidiate for students to be a part of the global IEEE community and share their ideas with IEEE brances all over the world.</string>
+    <string name="_03">03</string>
+    <string name="_04">04</string>
+    <string name="announcements">Announcements</string>
+    <string name="Announcement_content">Hacksagon 2020 Results are out!!</string>
+    <string name="our_mentors">Our Mentors</string>
+
 </resources>
