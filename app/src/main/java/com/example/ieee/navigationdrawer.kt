@@ -23,6 +23,11 @@ class Navigationdrawer : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_navigationdrawer)
 
+        val transaction = supportFragmentManager.beginTransaction()
+        transaction.replace(R.id.mainframe, HomeFragment())
+        transaction.disallowAddToBackStack()
+        transaction.commit()
+
         drawerLayout = findViewById(R.id.drawerLayout)
         navView = findViewById(R.id.navView)
 
@@ -55,19 +60,22 @@ class Navigationdrawer : AppCompatActivity() {
                         }
                         R.id.miItem4 -> {
                             Toast.makeText(applicationContext, "Clicked Item 4", Toast.LENGTH_SHORT).show()
+
                             val transaction = supportFragmentManager.beginTransaction()
                             transaction.replace(R.id.mainframe, SIgninFragment())
                             transaction.disallowAddToBackStack()
                             transaction.commit()
                         }
+
                     }
-true
+                true
+
                 }
     }
-    override fun onOptionsItemSelected (item : MenuItem): Boolean{
-if(toggle.onOptionsItemSelected(item)){
-            return true
-        }
-return super.onOptionsItemSelected(item)
-    }
+            override fun onOptionsItemSelected (item : MenuItem): Boolean{
+        if(toggle.onOptionsItemSelected(item)){
+                    return true
+                }
+        return super.onOptionsItemSelected(item)
+            }
 }
